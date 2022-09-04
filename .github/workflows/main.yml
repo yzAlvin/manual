@@ -1,23 +1,10 @@
-name: CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+name: Deploy mdBook
+on: [push]
 jobs:
   build:
-    name: Build, Test and Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
+      - uses: XAMPPRocky/deploy-mdbook@v1.1
         with:
-          toolchain: stable
-      - run: (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.4" mdbook)
-      - run: mdbook build && mdbook test
-      - uses: JamesIves/github-pages-deploy-action@4.1.7
-        with:
-          branch: gh-pages
-          folder: book
+            token: ${{ secrets.GITHUB_TOKEN }}
