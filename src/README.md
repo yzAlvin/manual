@@ -1,5 +1,7 @@
 # Smooth Brain Software Writeup
 
+![smooth brain](smooth_brain.png)
+
 this is simple book/guide/tutorial/advice on things i think you should know as a (aspiring?) software developer/engineer (i use it interchangeably bcos i dont know the difference)
 
 dont have any cool credentials but have mentored few people in software development industry; many friends want career change but dont know where to start, maybe this ok starting point. just want to help anybody succeed in this rewarding career
