@@ -20,7 +20,9 @@ in my opinion the most successful software devs take initiative to learn (dont h
 
 ## How to Use This Book
 
-no real structure, can go through linearly or pick out things that seem interesting.
+rather than learning by strictly following tutorials with rigid rules, this book aim to teach by **doing** small projects
+
+no real structure, can go through linearly or pick out things interesting
 
 if absolutely no clue, this my suggestion:
 
