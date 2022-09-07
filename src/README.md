@@ -1,4 +1,4 @@
-# Smooth Brain Software Writeup
+# Smooth Brain Writeup
 
 ![smooth brain](smooth_brain.png)
 
@@ -8,17 +8,13 @@ dont have any cool credentials but have mentored few people in software developm
 
 heavily influence by [grugbrain dev](https://grugbrain.dev/)
 
-## About Software Development
+## Brain Dump
 
-some people think need super big brain
-
-i am not super big brain 
-
-software landscape constantly evolving so need to be happy to constantly grow knowledge and adapt
+software landscape constantly evolving so need to constantly grow knowledge and adapt
 
 everyday will learn something new (not hyperbole)
 
-important not to get caught up trying to be a 'master' of something, if you can understand the basics or an intermediate level that is quite often good enough, there is diminishing returns when learning things about software
+important not to get caught up trying to be a 'master' of something, if you can understand the basics or an intermediate level that is quite often good enough, there is diminishing returns as you learn more
 
 in my opinion the most successful software devs take initiative to learn (dont have to do extra coding outside of work if you dont want to but it doesnt hurt)
 
