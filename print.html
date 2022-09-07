@@ -135,20 +135,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="smooth-brain-software-writeup"><a class="header" href="#smooth-brain-software-writeup">Smooth Brain Software Writeup</a></h1>
+                        <h1 id="smooth-brain-writeup"><a class="header" href="#smooth-brain-writeup">Smooth Brain Writeup</a></h1>
 <p><img src="smooth_brain.png" alt="smooth brain" /></p>
 <p>this is simple book/guide/tutorial/advice on things i think you should know as a (aspiring?) software developer/engineer (i use it interchangeably bcos i dont know the difference)</p>
 <p>dont have any cool credentials but have mentored few people in software development industry; many friends want career change but dont know where to start, maybe this ok starting point. just want to help anybody succeed in this rewarding career</p>
 <p>heavily influence by <a href="https://grugbrain.dev/">grugbrain dev</a></p>
-<h2 id="about-software-development"><a class="header" href="#about-software-development">About Software Development</a></h2>
-<p>some people think need super big brain</p>
-<p>i am not super big brain </p>
-<p>software landscape constantly evolving so need to be happy to constantly grow knowledge and adapt</p>
+<h2 id="brain-dump"><a class="header" href="#brain-dump">Brain Dump</a></h2>
+<p>software landscape constantly evolving so need to constantly grow knowledge and adapt</p>
 <p>everyday will learn something new (not hyperbole)</p>
-<p>important not to get caught up trying to be a 'master' of something, if you can understand the basics or an intermediate level that is quite often good enough, there is diminishing returns when learning things about software</p>
+<p>important not to get caught up trying to be a 'master' of something, if you can understand the basics or an intermediate level that is quite often good enough, there is diminishing returns as you learn more</p>
 <p>in my opinion the most successful software devs take initiative to learn (dont have to do extra coding outside of work if you dont want to but it doesnt hurt)</p>
 <h2 id="how-to-use-this-book"><a class="header" href="#how-to-use-this-book">How to Use This Book</a></h2>
-<p>no real structure, can go through linearly or pick out things that seem interesting.</p>
+<p>rather than learning by strictly following tutorials with rigid rules, this book aim to teach by <strong>doing</strong> small projects</p>
+<p>no real structure, can go through linearly or pick out things interesting</p>
 <p>if absolutely no clue, this my suggestion:</p>
 <ul>
 <li>Basic HTML</li>
@@ -175,7 +174,107 @@
 <h2 id="little-or-no-experience"><a class="header" href="#little-or-no-experience">Little or No Experience</a></h2>
 <p>everybody start somewhere.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="static-website"><a class="header" href="#static-website">static website</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="static-website-1"><a class="header" href="#static-website-1">static website</a></h1>
+<p>static - lacking in movement, action or change</p>
+<p>website - collection of web pages</p>
+<p>building a static website is good to get familiar with basic HTML and CSS</p>
+<p>will explain HTML and CSS with follow along examples</p>
+<p>show an example web page with basic html and css</p>
+<p>then you should try to build your own static web page</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="html"><a class="header" href="#html">HTML</a></h1>
+<p><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage (HTML)</p>
+<p>the standard markup language that tells web browsers what to display</p>
+<p>for an example, visit any website, right click the page and <code>inspect element</code> or <code>view page source</code>. you will see that page's HTML.</p>
+<p>HTML consists of <code>elements</code> which make up a webpage, and <code>tags</code> to give <code>content</code> meaning</p>
+<p>diagram here</p>
+<h2 id="tutorial"><a class="header" href="#tutorial">Tutorial</a></h2>
+<p>create a new file <code>hello.html</code> and open it in a web browser, it will be a blank page.</p>
+<p>in a text editor, open the file and add:</p>
+<pre><code class="language-html">&lt;p&gt;Hello&lt;/p&gt;
+</code></pre>
+<p>save <code>hello.html</code> and refresh the page, you should see Hello</p>
+<p>this <code>hello.html</code> document defines a web page with a paragraph that contains 'Hello'</p>
+<p>we can add more to it:</p>
+<pre><code class="language-html">&lt;h1&gt;My Website&lt;/h1&gt;
+&lt;p&gt;Hello&lt;/p&gt;
+&lt;p&gt;today I ran to the park&lt;/p&gt;
+</code></pre>
+<p>save and refresh</p>
+<p>now this web page has a heading 'My Website', and 2 paragraphs.</p>
+<p>there are a lot of HTML elements, but you dont need to know them all, you can find a list in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN web docs</a></p>
+<h3 id="nesting-elements"><a class="header" href="#nesting-elements">Nesting Elements</a></h3>
+<p>elements can be put <em>inside</em> other elements. this is called <code>nesting</code></p>
+<pre><code class="language-html">&lt;h1&gt;My Website&lt;/h1&gt;
+&lt;p&gt;Hello&lt;/p&gt;
+&lt;p&gt;today I &lt;strong&gt;ran&lt;/strong&gt; to the park&lt;/p&gt;
+</code></pre>
+<p>the <code>strong</code> element is nested inside the 2nd <code>p</code> element</p>
+<pre><code class="language-html">&lt;h1&gt;My Website&lt;/h1&gt;
+&lt;p&gt;Hello&lt;/p&gt;
+&lt;p&gt;today I &lt;strong&gt;ran&lt;/strong&gt; to the park&lt;/p&gt;
+&lt;footer&gt;
+    &lt;p&gt;2022&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+<p>a <code>p</code> element nested inside a <code>footer</code> element.</p>
+<p>note how the <code>p</code> inside the <code>footer</code> is indented, you <em>could</em> put it all in one line like </p>
+<pre><code class="language-html">&lt;footer&gt;&lt;p&gt;2022&lt;/p&gt;&lt;/footer&gt;
+</code></pre>
+<p>and the browser still renders it exactly the same, but to make it easier for yourself and others to understand the website by reading the code, its best to indent when it is nested</p>
+<p>..so why didnt we nest the <code>strong</code> element inside the <code>p</code> element?</p>
+<h3 id="block-vs-inline-elements"><a class="header" href="#block-vs-inline-elements">Block vs Inline Elements</a></h3>
+<ul>
+<li>Block elements create a new line, creating a block, hence <em>block</em></li>
+<li>Inline elements do not create a new line, hence <em>inline</em></li>
+</ul>
+<p>Blocks are generally structural elements like headings, paragraphs, lists, sections.</p>
+<p>Inlines are generally nested inside blocks.</p>
+<pre><code class="language-html">&lt;em&gt;first&lt;/em&gt;
+&lt;em&gt;second&lt;/em&gt;
+&lt;em&gt;third&lt;/em&gt;
+
+&lt;p&gt;fourth&lt;/p&gt;
+&lt;p&gt;fifth&lt;/p&gt;
+&lt;p&gt;sixth&lt;/p&gt;
+</code></pre>
+<p>put this example in a <code>.html</code> file and see how it renders</p>
+<h3 id="empty-elements"><a class="header" href="#empty-elements">Empty Elements</a></h3>
+<p>some elements omit a closing tag and content</p>
+<p>an example is the <code>img</code> tag</p>
+<pre><code class="language-html">&lt;img src=&quot;https://yzalv.in/manual/smooth_brain.png&quot;&gt;
+</code></pre>
+<p>notice how the <code>img</code> tag contains <code>src=...</code> in it. this is an <code>attribute</code></p>
+<h3 id="attributes"><a class="header" href="#attributes">Attributes</a></h3>
+<p>attributes contain extra information about an element</p>
+<pre><code class="language-html">&lt;a href=&quot;https://google.com&quot;&gt;a link to google&lt;/a&gt;
+</code></pre>
+<p>the <code>a</code> tag stands for <code>anchor</code>. anchors are used to make it's content link to somewhere, like another webpage or another website.</p>
+<p>in this example clicking the text will link to google's home page.</p>
+<h3 id="html-structure"><a class="header" href="#html-structure">HTML Structure</a></h3>
+<p>you can have webpages without the following structure and they will work fine, but its a good idea to follow existing conventions</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My test page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is my page&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ol>
+<li><code>&lt;html&gt;&lt;/html&gt;</code>: wraps all content on the page</li>
+<li><code>&lt;head&gt;&lt;/head&gt;</code>: wraps all content you want to include on the page but <em>not display</em>, such as search engine keywords, page description for search results, linked CSS and JS, etc.</li>
+<li><code>&lt;body&gt;&lt;/body&gt;</code>: wraps all content that <em>displays</em> on the page.</li>
+</ol>
+<h2 id="lab"><a class="header" href="#lab">Lab</a></h2>
+<p>hopefully know and understand HTML now, so let try build something</p>
+<p><img src="static_website/basic_website.png" alt="Basic Website" /></p>
+<p>this is screenshot of webpage that is only html, it is like a personal profile</p>
+<p>your task is to create the same/similar thing (but about yourself)</p>
+<p>remember you only need to remember the <em>concepts</em>, if you need to you can google everything if unsure</p>
+<p>eg <code>how do i create a numbered list HTML</code></p>
+<p>and you can refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN web docs</a> for help with finding and using the right HTML elements</p>
 
                     </main>
 
