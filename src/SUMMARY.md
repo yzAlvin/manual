@@ -1,3 +1,8 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+[introduction](README.md)
+[get inspired]()
+
+---
+
+- [where to start](START.md)
