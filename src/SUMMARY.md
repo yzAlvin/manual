@@ -1,8 +1,9 @@
 # Summary
 
 [introduction](README.md)
-[get inspired]()
+[pitfalls](PITFALLS.md)
 
 ---
 
-- [where to start](START.md)
+- [static website](static_website/README.md)
+    - [HTML](static_website/HTML.md)
