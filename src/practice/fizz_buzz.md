@@ -2,7 +2,7 @@
 
 common programming problem
 
-output first 100 fizz buzz numbers
+program to output first 100 fizz buzz numbers
 
 * any number divisible by three is replaced by the word `fizz`
 * any number divisible by five by the word `buzz` 

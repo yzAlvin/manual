@@ -9,3 +9,4 @@
     - [HTML](static_website/HTML.md)
 - [practice](practice/README.md)
     - [Fizz Buzz](practice/fizz_buzz.md)
+    - [Greeting](practice/greeting.md)

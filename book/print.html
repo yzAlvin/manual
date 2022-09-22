@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="static_website/index.html"><strong aria-hidden="true">1.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="static_website/HTML.html"><strong aria-hidden="true">1.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="practice/index.html"><strong aria-hidden="true">2.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="practice/fizz_buzz.html"><strong aria-hidden="true">2.1.</strong> Fizz Buzz</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="static_website/index.html"><strong aria-hidden="true">1.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="static_website/HTML.html"><strong aria-hidden="true">1.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="practice/index.html"><strong aria-hidden="true">2.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="practice/fizz_buzz.html"><strong aria-hidden="true">2.1.</strong> Fizz Buzz</a></li><li class="chapter-item expanded "><a href="practice/greeting.html"><strong aria-hidden="true">2.2.</strong> Greeting</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -270,7 +270,7 @@
 <p>can revisit later in learning journey and compare solution, good for seeing progress</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="fizz-buzz"><a class="header" href="#fizz-buzz">Fizz Buzz</a></h1>
 <p>common programming problem</p>
-<p>output first 100 fizz buzz numbers</p>
+<p>program to output first 100 fizz buzz numbers</p>
 <ul>
 <li>any number divisible by three is replaced by the word <code>fizz</code></li>
 <li>any number divisible by five by the word <code>buzz</code> </li>
@@ -285,6 +285,32 @@ fizz
 4
 buzz
 etc.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="greeting"><a class="header" href="#greeting">Greeting</a></h1>
+<p>start simple and get more complicated, do each requirement one at a time and don't peek at the next requirement</p>
+<p>program to greet names</p>
+<h2 id="requirement-1"><a class="header" href="#requirement-1">Requirement 1</a></h2>
+<p>program that takes in a name and greets it.</p>
+<p>eg. when <code>name</code> is <code>Bob</code>, the program outputs <code>Hello, Bob.</code></p>
+<h2 id="requirement-2"><a class="header" href="#requirement-2">Requirement 2</a></h2>
+<p>handle nulls.</p>
+<p>eg. when <code>name</code> is <code>null</code>, the program outputs <code>Hello, my friend.</code></p>
+<h2 id="requirement-3"><a class="header" href="#requirement-3">Requirement 3</a></h2>
+<p>handle shouting. when a name is in all caps, the program should shout back.</p>
+<p>eg. when <code>name</code> is <code>BOB</code>, the program outputs <code>HELLO BOB!</code></p>
+<h2 id="requirement-4"><a class="header" href="#requirement-4">Requirement 4</a></h2>
+<p>handle two names. when <code>name</code> is a collection of names, then both names should be greeted.</p>
+<p>eg. when <code>name</code> is <code>[&quot;Alice&quot;, &quot;Bob&quot;]</code>, the program outputs <code>Hello, Alice and Bob.</code></p>
+<h2 id="requirement-5"><a class="header" href="#requirement-5">Requirement 5</a></h2>
+<p>handle an arbitrary number of names. when there are more than 2 names, separate with commas and close with <code>and</code>.</p>
+<p>eg. when <code>name</code> is <code>[&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]</code>, the program outputs <code>Hello, Alice, Bob, and Charlie.</code></p>
+<h2 id="requirement-6"><a class="header" href="#requirement-6">Requirement 6</a></h2>
+<p>handle a mix of normal and all caps names. separate the output into two greetings.</p>
+<p>eg. when <code>name</code> is <code>[&quot;Alice&quot;, &quot;BOB&quot;, &quot;Charlie&quot;]</code>, the program outputs <code>Hello, Alice and Charlie. AND HELLO BOB!</code></p>
+<h2 id="requirement-7"><a class="header" href="#requirement-7">Requirement 7</a></h2>
+<p>handle entries in <code>name</code> that contain a comma. split it and treat as a separate person to greet.</p>
+<p>eg. when <code>name</code> is <code>[&quot;Charlie&quot;, &quot;Bob, Alice&quot;]</code>, the program outputs <code>Hello, Charlie, Bob, and Alice.</code></p>
+<h3 id="source"><a class="header" href="#source">Source</a></h3>
+<p><a href="https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata">testdouble greeting kata</a></p>
 
                     </main>
 
