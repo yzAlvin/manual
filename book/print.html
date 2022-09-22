@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="static_website/index.html"><strong aria-hidden="true">1.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="static_website/HTML.html"><strong aria-hidden="true">1.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="practice/index.html"><strong aria-hidden="true">2.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="practice/fizz_buzz.html"><strong aria-hidden="true">2.1.</strong> Fizz Buzz</a></li><li class="chapter-item expanded "><a href="practice/greeting.html"><strong aria-hidden="true">2.2.</strong> Greeting</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="static_website/index.html"><strong aria-hidden="true">1.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="static_website/HTML.html"><strong aria-hidden="true">1.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="practice/index.html"><strong aria-hidden="true">2.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="practice/fizz_buzz.html"><strong aria-hidden="true">2.1.</strong> Fizz Buzz</a></li><li class="chapter-item expanded "><a href="practice/greeting.html"><strong aria-hidden="true">2.2.</strong> Greeting</a></li><li class="chapter-item expanded "><a href="practice/savings_goal.html"><strong aria-hidden="true">2.3.</strong> Savings Goal</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -311,6 +311,52 @@ etc.</p>
 <p>eg. when <code>name</code> is <code>[&quot;Charlie&quot;, &quot;Bob, Alice&quot;]</code>, the program outputs <code>Hello, Charlie, Bob, and Alice.</code></p>
 <h3 id="source"><a class="header" href="#source">Source</a></h3>
 <p><a href="https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata">testdouble greeting kata</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="savings-goal"><a class="header" href="#savings-goal">Savings Goal</a></h1>
+<p>program that can be used for real</p>
+<p>program to calculate how long to reach target savings goal</p>
+<p>often you want to buy something that you need to save up for, let's make program to calculate how long it will take to save up for it.</p>
+<p>i want to buy a new phone, it cost $1,000
+i only have $100, but i get $300 a month.</p>
+<p>month 1 = $100 + $300 = $400
+month 2 = $400 + $300 = $700
+month 3 = $700 + $300 = $1,000</p>
+<p>it will take me 3 months from now to be able to buy the new phone.</p>
+<p>how long will it take if the amount is $2,000?
+how long will it take if i get $100 a month?
+how long will it take if i am starting with $0?</p>
+<p>program should be able to tell you how long much faster than doing the math by hand</p>
+<h2 id="interest-rate"><a class="header" href="#interest-rate">Interest Rate</a></h2>
+<p>have seen people get stuck trying to solve with fancy programming, just keep simple and google if there is a way, like just use math</p>
+<p>use compound interest formula
+<code>t = ln(A/P) / n(ln(1 + r/n))</code></p>
+<ul>
+<li>A = Accrued amount (principal + interest)</li>
+<li>P = Principal amount</li>
+<li>r = Annual nominal interest rate as a decimal</li>
+<li>n = number of compounding periods per unit of time</li>
+<li>t = time in decimal years</li>
+<li>ln = natural log</li>
+</ul>
+<p>same scenario but my bank has monthly interest rate of 10% a month.
+month 1 = $100 + $10 + $300 = $410
+month 2 = $410 + $41 + $300 = $751
+month 3 = $751 + $75.1 + $300 = $1126.1</p>
+<p>it still takes 3 months.</p>
+<p>i have a goal of saving $100,000, i currently have $0, i get $5,000 a month and my monthly interest rate is 20%</p>
+<p>month 1 = $0 + $0 + $5,000 = $5,000
+month 2 = $5,000 + $1,000 + $5,000 = $11,000
+month 3 = $11,000 + $2,200 + $5,000 = $17,200
+month 4 = $17,200 + $3,440 + $5,000 = $25,640
+month 5 = $25,640 + $5,128 + $5,000 = $35,768
+month 6 = $35,768 + $7,153.6 + $5,000 = $47,921.6
+month 7 = $47,921.6 + $9584.32 + $5,000 = $62,505.92
+month 8 = $62,505.92 + $12,501.18 + $5,000 = $80,007.10
+month 9 = $80,007.10 + $16001.42 + $5,000 = $10,1008.52</p>
+<p>it will take 9 months.</p>
+<p>how long will it take if i only get $3,000 a month with 20% interest?</p>
+<p>how long will it take if i get $5,000 a month wih a 5% interest?, 2.35% interest?</p>
+<p>how long will it take if I am starting with $40,000, getting $2,000 a month, at 8% interest?</p>
+<p>program should be able to tell you how long much faster than doing the math by hand</p>
 
                     </main>
 
