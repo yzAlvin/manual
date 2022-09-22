@@ -7,3 +7,5 @@
 
 - [static website](static_website/README.md)
     - [HTML](static_website/HTML.md)
+- [practice](practice/README.md)
+    - [Fizz Buzz](practice/fizz_buzz.md)
