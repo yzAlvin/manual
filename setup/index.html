@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>practice</title>
+        <title>setup</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="../PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../setup/index.html"><strong aria-hidden="true">1.</strong> setup</a></li><li class="chapter-item expanded "><a href="../static_website/index.html"><strong aria-hidden="true">2.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../static_website/HTML.html"><strong aria-hidden="true">2.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="../practice/index.html" class="active"><strong aria-hidden="true">3.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../practice/fizz_buzz.html"><strong aria-hidden="true">3.1.</strong> Fizz Buzz</a></li><li class="chapter-item expanded "><a href="../practice/greeting.html"><strong aria-hidden="true">3.2.</strong> Greeting</a></li><li class="chapter-item expanded "><a href="../practice/savings_goal.html"><strong aria-hidden="true">3.3.</strong> Savings Goal</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">introduction</a></li><li class="chapter-item expanded affix "><a href="../PITFALLS.html">pitfalls</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../setup/index.html" class="active"><strong aria-hidden="true">1.</strong> setup</a></li><li class="chapter-item expanded "><a href="../static_website/index.html"><strong aria-hidden="true">2.</strong> static website</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../static_website/HTML.html"><strong aria-hidden="true">2.1.</strong> HTML</a></li></ol></li><li class="chapter-item expanded "><a href="../practice/index.html"><strong aria-hidden="true">3.</strong> practice</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../practice/fizz_buzz.html"><strong aria-hidden="true">3.1.</strong> Fizz Buzz</a></li><li class="chapter-item expanded "><a href="../practice/greeting.html"><strong aria-hidden="true">3.2.</strong> Greeting</a></li><li class="chapter-item expanded "><a href="../practice/savings_goal.html"><strong aria-hidden="true">3.3.</strong> Savings Goal</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,20 +134,58 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="practice"><a class="header" href="#practice">practice</a></h1>
-<p>have heard it called kata</p>
-<p>just some practice problems to try solving</p>
-<p>can do any language</p>
-<p>can revisit later in learning journey and compare solution, good for seeing progress</p>
+                        <h1 id="setup"><a class="header" href="#setup">setup</a></h1>
+<p>maybe have done some programming tutorials or have run code snippets</p>
+<p>problem is only know coding from context of browser - lets set up so can write code locally on machine</p>
+<h2 id="code-editor"><a class="header" href="#code-editor">code editor</a></h2>
+<p>you could use any text editor like notepad</p>
+<p>problem is there are better tools that can help you write code</p>
+<p>examples are notepad++, sublime text, visual code they offer syntax highlighting and with language server protocol can have code suggestions</p>
+<p>i recommend <a href="https://code.visualstudio.com/">visual studio code</a> for beginner</p>
+<h3 id="other"><a class="header" href="#other">other</a></h3>
+<p>can also use an integrated development environment (IDE), that is specific for the language you write</p>
+<ul>
+<li>Java - IntelliJ</li>
+<li>Python Pycharm</li>
+<li>C# - Visual Studio (not the same as visual studio code)</li>
+</ul>
+<p>often has more powerful features but more specific to a language</p>
+<p>can also use less GUI and more keyboard focused editors like vim, emacs, don't recommend for beginners, but definitely worth learning if interested</p>
+<h2 id="running-code"><a class="header" href="#running-code">running code</a></h2>
+<h3 id="javascript"><a class="header" href="#javascript">javascript</a></h3>
+<p>need a javascript runtime environment to execute JavaScript code outside a web browser</p>
+<h4 id="node"><a class="header" href="#node">node</a></h4>
+<p><a href="https://nodejs.org/en/">node</a></p>
+<p>with a <code>.js</code> file, run command <code>node path/to/.js file</code> in terminal</p>
+<h5 id="example"><a class="header" href="#example">example</a></h5>
+<p>create a file <code>example.js</code> with the content</p>
+<pre><code class="language-js">console.log('Hello World');
+</code></pre>
+<p>run <code>node example.js</code> in a terminal to run the code in the file.</p>
+<h4 id="deno"><a class="header" href="#deno">deno</a></h4>
+<h4 id="bun"><a class="header" href="#bun">bun</a></h4>
+<h4 id="web-browser"><a class="header" href="#web-browser">web browser</a></h4>
+<p>most (all?) web browsers have dev tools which you can reach with <code>F12</code> or right click -&gt; inspect</p>
+<p>there will be a <code>console</code> tab where you can type and run code</p>
+<h3 id="html"><a class="header" href="#html">html</a></h3>
+<p>html is a markup language, not really 'code' but including it anyway</p>
+<p>you dont need anything special to 'run' html, you can open it in a browser, drag and drop into browser and it will render the html</p>
+<h3 id="python"><a class="header" href="#python">python</a></h3>
+<p>python is pre-installed on some operating systems, like mac. if don't already have it, download <a href="https://www.python.org/">python</a></p>
+<h4 id="example-1"><a class="header" href="#example-1">example</a></h4>
+<p>create a file <code>example.py</code> with the content</p>
+<pre><code class="language-js">print('Hello World');
+</code></pre>
+<p>run <code>python example.py</code> in a terminal to run the code in the file.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../static_website/HTML.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../PITFALLS.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../practice/fizz_buzz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../static_website/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -156,10 +194,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../static_website/HTML.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../PITFALLS.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../practice/fizz_buzz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../static_website/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
