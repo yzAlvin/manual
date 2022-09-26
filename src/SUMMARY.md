@@ -6,6 +6,11 @@
 ---
 
 - [setup](setup/README.md)
+    - [editor](setup/editor.md)
+    - [javascript](setup/javascript.md)
+    - [html](setup/html.md)
+    - [python](setup/python.md)
+    - [markdown](setup/markdown.md)
 - [static website](static_website/README.md)
     - [HTML](static_website/HTML.md)
 - [practice](practice/README.md)
